@@ -1,0 +1,437 @@
+<html lang="en-US"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+<title>TTM4175</title>
+<meta property="og:title" content="TTM4175">
+<meta property="og:locale" content="en_US">
+<meta name="description" content="Introduction to Communication Technology and Digital Security">
+<meta property="og:description" content="Introduction to Communication Technology and Digital Security">
+
+
+<link rel="stylesheet" href="assets/bootstrap.min.css">
+<script src="assets/jquery-3.5.1.min.js"></script>
+<script src="assets/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="assets/style.css" />
+<link rel="stylesheet" type="text/css" href="assets/bootstrap-icons.css">
+<style type="text/css">.person-card img {
+  width: 56px;
+  border: 1px solid #eee;
+}
+
+.person-card-name {
+  font-weight: 600;
+}
+
+.person-card-email {
+  font-size: 0.8em;
+}
+
+.person-card-detail {
+  font-size: 0.8em;
+}
+.person-card img {
+  width: 56px;
+  border: 1px solid #eee;
+}
+
+.person-card-name {
+  font-weight: 600;
+}
+
+.person-card-email {
+  font-size: 0.8em;
+}
+
+.person-card-detail {
+  font-size: 0.8em;
+}
+
+.tree ul, .tree ul ul {
+  list-style: none;
+ } 
+.tree ul ul {
+ }
+ .tree ul li {
+  margin: 0;
+  padding: 0 7px;
+  line-height: 20px; 
+  border-left: 1px solid #868279;
+ }
+ .tree ul li:last-child {
+     border-left:none;
+ }
+ .tree ul li:before {
+    position:relative;
+    top:-0.3em;
+    height:22px;
+    width:12px;
+    color:white;
+    border-bottom:1px solid #868279;
+    content:"";
+    display:inline-block;
+    left:-7px;
+ }
+ .tree ul li:last-child:before {
+    border-left:1px solid #868279;
+    border-radius: 0px 0px 0px 3px   
+ }
+</style>
+<script src="assets/anchor.js"></script>
+<script src="assets/script-aside.js"></script>
+</head>
+<body id="top">
+
+<nav class="navbar navbar-expand-md navbar-dark " style="background-color:#666666"#2B65EC"> <!-- fixed-top -->
+        <ul class="nav nav-pills">
+        <li class="nav-item">
+    <a class="nav-link" href="index.html" style="font-weight: bold")>TTM4175</a>
+  </li>
+
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Teknostart</a>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="day0-2021.html">Oppstart</a>
+      <a class="dropdown-item" href="material/TTM4175-2021-L01-Introduction_to_ethical_hacking.pdf">Introduction to Ethical Hacking (PDF)</a>
+      <a class="dropdown-item" href="material/TTM4175-2021-L01-Introduction_to_Kali_linux.pdf">Introduction to Kali Linux (PDF)</a>
+      <a class="dropdown-item" href="day2-2021.html">Dag 2</a>
+      <a class="dropdown-item" href="day3-2021.html">Dag 3</a>
+      <div class="dropdown-divider"></div>
+      <a class="dropdown-item" href="day0-2020.html">(2020) Dag 0: Getting Started</a>
+      <a class="dropdown-item" href="day1-2020.html">(2020) Dag 1: Virtual Box</a>
+      <a class="dropdown-item" href="day2-2020.html">(2020) Dag 2: Linux Command Line</a>
+      <a class="dropdown-item" href="day3-2020.html">(2020) Dag 3: SSH and HTML</a>
+      <div class="dropdown-divider"></div>
+      <a class="dropdown-item" href="tips.html">Tips</a>
+    </div>
+  </li>
+        
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Preparation</a>
+    <div class="dropdown-menu">
+      <a class="dropdown-item disabled"><strong>Security and Ethical Hacking</strong></a>
+      <a class="dropdown-item" href="prep-security-1-2021.html">Security 1</a>
+      <a class="dropdown-item" href="prep-security-2-2021.html">Security 2</a>
+      <a class="dropdown-item" href="prep-security-3-2021.html">Security 3</a>
+      <a class="dropdown-item" href="prep-security-4-2021.html">Security 4</a>
+      <a class="dropdown-item" href="prep-security-5-2021.html">Security 5</a>
+      <div class="dropdown-divider"></div>
+      <a class="dropdown-item" href="prep-teamwork.html">Teamwork</a>
+      <div class="dropdown-divider"></div>
+      <a class="dropdown-item disabled"><strong>Internet of Things</strong></a>
+      <a class="dropdown-item" href="prep-iot-intro.html">IoT 1: Introduction</a>
+      <a class="dropdown-item" href="prep-iot-stm.html">IoT 2: State Machines</a>
+      <a class="dropdown-item" href="prep-iot-stmpy.html">IoT 2: State Machines in Micro Python</a>
+      <a class="dropdown-item" href="prep-iot-http-json.html">IoT 3: HTTP and JSON</a>
+      <a class="dropdown-item" href="prep-iot-mqtt.html">IoT 4: MQTT</a>
+      <!--
+      <a class="dropdown-item disabled"><strong>Networking (2020)</strong></a>
+      <a class="dropdown-item" href="prep-networking-1-2020.html">Binary and IP addresses</a>
+      <a class="dropdown-item" href="prep-networking-2-2020.html">Layers and Docker</a>
+      <a class="dropdown-item" href="prep-networking-3-2020.html">Webservers and DNS</a>
+      <div class="dropdown-divider"></div>
+      <a class="dropdown-item disabled"><strong>Security (2020)</strong></a>
+      <a class="dropdown-item" href="prep-security-1-2020.html">Security 1: Cyber Security and Ethical Hacking </a>
+      <a class="dropdown-item" href="prep-security-2-2020.html">Security 2: Authentication, Authorization, and Password Storage</a>
+      <a class="dropdown-item" href="prep-security-3-2020.html">Security 3: Passwords and Cryptography</a>
+      <a class="dropdown-item" href="prep-security-4-2020.html">Security 4: Security Vulnerabilities</a>
+      <div class="dropdown-divider"></div>
+      <a class="dropdown-item disabled"><strong>Internet of Things (2020)</strong></a>
+      <a class="dropdown-item" href="prep-iot-intro.html">IoT 1: Introduction</a>
+      <a class="dropdown-item" href="prep-iot-devices.html">IoT 1: Installation</a>
+      <a class="dropdown-item" href="prep-iot-stm.html">IoT 2: State Machines</a>
+      <a class="dropdown-item" href="prep-iot-stmpy.html">IoT 2: State Machines in Micro Python</a>
+      <a class="dropdown-item" href="prep-iot-http-json.html">IoT 3: HTTP and JSON</a>
+      <a class="dropdown-item" href="prep-iot-mqtt.html">IoT 4: MQTT</a>
+      <a class="dropdown-item" href="prep-iot-api.html">IoT 4: APIs</a>
+      <a class="dropdown-item" href="prep-iot-nb-iot.html">NB-IoT (Extra)</a>-->
+    </div>
+  </li>
+  
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Labs</a>
+    <div class="dropdown-menu">
+        <a class="dropdown-item disabled"><strong>Security</strong></a>
+        <a class="dropdown-item" href="security-1-2021.html">Security 1</a>
+        <a class="dropdown-item" href="material/TTM4175-2021-L02-Technical_information_gathering.pdf">Security 2: Technical Information gathering</a>
+        <a class="dropdown-item" href="material/TTM4175-2021-L03-Network_mapping.pdf">Security 3: Network mapping</a>
+        <a class="dropdown-item" href="material/TTM4175-2021-L04-Web_hacking1.pdf">Security 4: Web Hacking 1</a>
+        <a class="dropdown-item" href="material/TTM4175-2021-L04-Web_hacking2.pdf">Security 4: Web Hacking 2</a>
+        <a class="dropdown-item" href="security-5-2021.html">Security 5</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="teamwork.html">Teamwork</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item disabled"><strong>Internet of Things (2020)</strong></a>
+        <a class="dropdown-item" href="iot-devices-2021.html">IoT 1: Programming Devices</a>
+        <a class="dropdown-item" href="iot-stm-2021.html">IoT 2: State Machines</a>
+        <a class="dropdown-item" href="iot-http-json.html">IoT 3: HTTP and JSON</a>
+        <a class="dropdown-item" href="iot-mqtt-chat.html">IoT 4: MQTT Chat</a>
+        <!--
+        <a class="dropdown-item disabled"><strong>Networking (2020)</strong></a>
+        <a class="dropdown-item" href="networking-1-2020.html">Binary and IP addresses</a>
+        <a class="dropdown-item" href="networking-2-2020.html">Layers and Docker</a>
+        <a class="dropdown-item" href="networking-3-2020.html">Webservers and DNS</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item disabled"><strong>Security (2020)</strong></a>
+        <a class="dropdown-item" href="security-1-2020.html">Security 1</a>
+        <a class="dropdown-item" href="security-2-2020.html">Security 2</a>
+        <a class="dropdown-item" href="security-3-2020.html">Security 3</a>
+        <a class="dropdown-item" href="security-4-2020.html">Security 4</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item disabled"><strong>Internet of Things (2020)</strong></a>
+        <a class="dropdown-item" href="iot-devices.html">IoT 1: Programming Devices</a>
+        <a class="dropdown-item" href="iot-stm.html">IoT 2: State Machines</a>
+        <a class="dropdown-item" href="iot-http-json-2020.html">IoT 3: HTTP and JSON</a>
+        <a class="dropdown-item" href="iot-http-json-2020-solution.html">IoT 3: HTTP and JSON (Solution and Revised Tasks)</a>
+        <a class="dropdown-item" href="iot-mqtt-chat.html">IoT 4: MQTT Chat</a>
+        <a class="dropdown-item" href="iot-lopy.html">LoPy</a>
+        <a class="dropdown-item" href="iot-mqtt.html">MQTT</a>
+        <a class="dropdown-item" href="iot-lorawan.html">LoRaWAN / NB-IoT</a>
+        <a class="dropdown-item" href="iot-api.html">API</a>-->
+      </div>
+  </li>
+  
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Extra</a>
+    <div class="dropdown-menu">
+      <a class="dropdown-item disabled"><strong>Learning</strong></a>
+      <a class="dropdown-item" href="learning-rats.html">RATs</a>
+      <a class="dropdown-item" href="feedback.html">Tilbakemelding</a>
+      <a class="dropdown-item" href="reports.html">Rapporter</a>
+      <a class="dropdown-item" href="teams.html">Teams</a>
+      <a class="dropdown-item" href="working-in-teams.html">Working in Teams</a>
+      <a class="dropdown-item" href="tools.html">Learning Tools</a>
+      <div class="dropdown-divider"></div>
+      <a class="dropdown-item disabled"><strong>Material</strong></a>
+      <a class="dropdown-item" href="commands-help.html">Help on Commands</a>
+      <a class="dropdown-item" href="commands.html">List of Commands</a>
+      <a class="dropdown-item" href="computer-history.html">Extra Videos</a>
+      <div class="dropdown-divider"></div>
+      <a class="dropdown-item disabled"><strong>Tools</strong></a>
+      <a class="dropdown-item" href="virtual-box-mac.html">Virtual Box for Mac</a>
+      <a class="dropdown-item" href="virtual-box-win.html">Virtual Box for Windows</a>
+      <a class="dropdown-item" href="shell-mac.html">Terminal and SSH on Mac</a>
+      <a class="dropdown-item" href="shell-win.html">Terminal and SSH on Windows</a>
+    </div>
+  </li>
+  
+  <!--
+  <li class="nav-item">
+    <a class="nav-link" href="#">Blackboard</a>
+  </li>-->
+</ul>
+
+<div class="navbar-nav flex-row ml-md-auto d-none d-md-flex"></div>
+             <a class="navbar-brand" href="https://ntnu.edu">
+      	<svg width="100" height="30">
+      		<image xlink:href="https://innsida.ntnu.no/innsida-theme/images/ntnu-graphics/ntnu_logo_white.svg" 
+      		src="https://innsida.ntnu.no/innsida-theme/images/ntnu-graphics/ntnu_logo_white.png" width="100%" height="100%"></image>
+      	</svg>
+      </a>
+    </nav>
+
+
+<div class="page">
+<nav class="d-flex justify-content-between">
+<a type="button" href="index.html" class="page-link rounded">
+<svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" class="bi bi-arrow-left-short" viewBox="0 0 16 16" id="arrow-left-short"><path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z" /></svg>
+All extensions
+</a>
+<div></div>
+<div></div>
+</nav>
+    </section>
+    <section class="content">
+<h1>Documentation</h1>
+
+<table class="table"><tbody><td>Python type</td><td>CardGroup</td>
+<tr></tr>
+<td>type</td><td>cards</td>
+<tr></tr>
+<td>Language</td><td><a href="#">YAML</a></td>
+<tr></tr>
+<td>Required fields</td><td></td>
+<tr></tr>
+<td>Optional fields</td><td>columns</td>
+<tr></tr>
+<td>Post-Yaml Section</td><td>no</td>
+<tr></tr></tbody></table>
+
+
+
+
+
+<table class="table"><tbody><td>Python type</td><td>Card</td>
+<tr></tr>
+<td>type</td><td>card/text, card/person, card, card/arrow</td>
+<tr></tr>
+<td>Language</td><td><a href="#">YAML</a></td>
+<tr></tr>
+<td>Required fields</td><td></td>
+<tr></tr>
+<td>Optional fields</td><td>link, title, kind, name, detail, image, email, text, link_title</td>
+<tr></tr>
+<td>Post-Yaml Section</td><td>optional</td>
+<tr></tr></tbody></table>
+
+    </section>
+    <section class="content">
+<h1>Example</h1>
+
+<div class="row row-cols-1 row-cols-md-2 g-4 mb-5">
+<div class="col">
+    <div class="card shadow-sm h-100">
+    <div class="card-body">
+        <h5 class="card-title">Dine studentrepresentanter</h5>
+        <p class="card-text">Som student har du en del tillitsvalgte, representanter og andre kontaktpunkter.</p>
+<ul>
+    <li><a href="studentrepresentanter.html" class="stretched-link">Finn dine studentrepresentanter</a></li>
+</ul>
+    </div>
+    </div>
+</div>
+</div>
+<h2>Source Code</h2>
+
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode yaml"><code class="sourceCode yaml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">type</span><span class="kw">:</span><span class="at"> card/text</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> Dine studentrepresentanter</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">text</span><span class="kw">:</span><span class="at"> Som student har du en del tillitsvalgte, representanter og andre kontaktpunkter.</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">link</span><span class="kw">:</span><span class="at"> studentrepresentanter.html</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu">link_title</span><span class="kw">:</span><span class="at"> Finn dine studentrepresentanter</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span></code></pre></div>
+    </section>
+    <section class="content">
+<h1>Example</h1>
+
+<div class="row row-cols-1 row-cols-md-1 g-4 mb-5">
+<div class="col">
+<div class="card h-100"">
+<div class="card-body">
+<h6 class="card-title">Finn rett person å snakke med</h6>
+<p>Avhengig av hva det gjelder, har du ulike muligheter for å kontakte noen:</p>
+<ul>
+<li>Hvis det gjelder et konkret <strong>emne</strong>, ta gjerne kontakt med faglæreren direkte, eller ta det opp med referansegruppen. Om det ikke finnes referansegruppe, ta kontakt med din <a href="studentrepresentanter.html">klassetillitsvalgt (KTV)</a>.</li>
+<li>Hvis det gjelder undervisning eller det sosiale i hele <strong>årstrinnet</strong>, ta kontakt med din <a href="studentrepresentanter.html">klassetillitsvalgt (KTV)</a>, <a href="studentrepresentanter.html">studentkontakter</a>, eller <a href="kullkoordinator-studenter.html">din kullkoordinator</a>. Du kan også ta kontakt med din studieprogramleder.</li>
+<li>Hvis du trenger <strong>personlig hjelp eller veiledning</strong>, ta kontakt med din studieveileder. De kan også formidle alle andre hjelpetilbud.</li>
+<li>Bruk <a href="https://i.ntnu.no/sifra-ansatt">Si fra!</a> for å varsle om <strong>uønskede hendelser</strong> og <strong>ting som ikke fungerer</strong>.</li>
+<li>Hvis du ellers lurer på noe, <a href="mailto:kontakt@iik.ntnu.no">send oss en e-post</a>.</li>
+</ul>
+
+</div>
+</div>
+</div>
+</div>
+<h2>Source Code</h2>
+
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode yaml"><code class="sourceCode yaml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">type</span><span class="kw">:</span><span class="at"> cards</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">columns</span><span class="kw">:</span><span class="at"> </span><span class="dv">1</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="fu">type</span><span class="kw">:</span><span class="at"> card</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> Finn rett person å snakke med</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="fu">Avhengig av hva det gjelder, har du ulike muligheter for å kontakte noen</span><span class="kw">:</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="at">*   Hvis det gjelder et konkret **emne**, ta gjerne kontakt med faglæreren direkte, eller ta det opp med referansegruppen. Om det ikke finnes referansegruppe, ta kontakt med din [klassetillitsvalgt (KTV)](studentrepresentanter.html).</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="at">*   Hvis det gjelder undervisning eller det sosiale i hele **årstrinnet**, ta kontakt med din [klassetillitsvalgt (KTV)](studentrepresentanter.html), [studentkontakter](studentrepresentanter.html), eller [din kullkoordinator](kullkoordinator-studenter.html). Du kan også ta kontakt med din studieprogramleder.</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="at">*   Hvis du trenger **personlig hjelp eller veiledning**, ta kontakt med din studieveileder. De kan også formidle alle andre hjelpetilbud.</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="at">*   Bruk [Si fra!](https://i.ntnu.no/sifra-ansatt) for å varsle om **uønskede hendelser** og **ting som ikke fungerer**.</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="at">*   Hvis du ellers lurer på noe, [send oss en e-post](mailto:kontakt@iik.ntnu.no).</span></span></code></pre></div>
+    </section>
+    <section class="content">
+<h1>Example</h1>
+
+<div class="row row-cols-1 row-cols-md-2 g-4 mb-5">
+<div class="col">
+<div class="card mb-3 border-0 person-card h-100" style="max-width: 540px;">
+    <div class="row g-0">
+        <div class="col-md-3">
+            <img src="data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22200%22%20height%3D%22200%22%20viewBox%3D%220%200%20200%20200%22%3E%3Crect%20fill%3D%22%23eeeeee%22%20width%3D%22200%22%20height%3D%22200%22/%3E%3Ctext%20fill%3D%22%23aaaaaa%22%20font-family%3D%22Arial%2CHelvetica%2Csans-serif%22%20font-size%3D%2212%22%20dy%3D%2210.5%22%20font-weight%3D%22bold%22%20x%3D%2250%25%22%20y%3D%2250%25%22%20text-anchor%3D%22middle%22%3E200x200%3C/text%3E%3C/svg%3E" class="img-fluid" alt="Photo of Firstname Surname">
+        </div>
+        <div class="col-md-9">
+            <div class="card-body" style="padding: 0px 0px 0px 5px">
+                <div class="person-card-name">Firstname Surname</div>
+                <div class="person-card-detail">Course teacher</div>
+                <a class="person-card-email stretched-link" href="mailto:email@ntnu.no">email@ntnu.no</a>
+            </div>
+        </div>
+        </div>
+</div>
+</div>
+</div>
+<h2>Source Code</h2>
+
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode yaml"><code class="sourceCode yaml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">type</span><span class="kw">:</span><span class="at"> card/person</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">name</span><span class="kw">:</span><span class="at"> Firstname Surname</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">email</span><span class="kw">:</span><span class="at"> email@ntnu.no</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">detail</span><span class="kw">:</span><span class="at"> Course teacher</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu">image</span><span class="kw">:</span><span class="at"> </span><span class="st">&quot;_placeholder 200 x 200&quot;</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span></code></pre></div>
+    </section>
+    <section class="content">
+<h1>Example</h1>
+
+<div class="row row-cols-1 row-cols-md-2 g-4 mb-5">
+<div class="col">
+<div class="card text-end shadow-sm h-100">
+<div class="card-body">
+    <h5 class="card-title">For studenter</h5>
+    <a href="student.html" class="stretched-link">
+    <i class="bi bi-arrow-right-circle fs-1"></i>
+    </a>
+</div>
+</div>
+</div>
+</div>
+<h2>Source Code</h2>
+
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode yaml"><code class="sourceCode yaml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">type</span><span class="kw">:</span><span class="at"> card/arrow</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> For studenter</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">link</span><span class="kw">:</span><span class="at"> student.html</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span></code></pre></div>
+    </section>
+    <section class="content">
+<h1>Example</h1>
+
+<div class="row row-cols-1 row-cols-md-2 g-4 mb-5">
+<div class="col">
+    <div class="card shadow-sm h-100">
+    <div class="card-body">
+        <h5 class="card-title">IIK Snacks and Science</h5>
+        <p class="card-text">Seminar om forskning for studenter ved IIK.</p>
+        <a href="snacks.html" class="stretched-link"></a>
+    </div>
+    </div>
+</div>
+</div>
+<h2>Source Code</h2>
+
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode yaml"><code class="sourceCode yaml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">type</span><span class="kw">:</span><span class="at"> card/text</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> IIK Snacks and Science</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">text</span><span class="kw">:</span><span class="at"> Seminar om forskning for studenter ved IIK.</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">link</span><span class="kw">:</span><span class="at"> snacks.html</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span></code></pre></div>
+    </section>
+</div>
+
+
+<footer></footer>
+<script>
+    anchors.add('h1').add('h2').add('h3');
+    anchors.options.visible = 'always';
+</script>
+</body>
+</html>

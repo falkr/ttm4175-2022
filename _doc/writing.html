@@ -1,0 +1,633 @@
+<html lang="en-US"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+<title>TTM4175</title>
+<meta property="og:title" content="TTM4175">
+<meta property="og:locale" content="en_US">
+<meta name="description" content="Introduction to Communication Technology and Digital Security">
+<meta property="og:description" content="Introduction to Communication Technology and Digital Security">
+
+
+<link rel="stylesheet" href="assets/bootstrap.min.css">
+<script src="assets/jquery-3.5.1.min.js"></script>
+<script src="assets/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="assets/style.css" />
+<link rel="stylesheet" type="text/css" href="assets/bootstrap-icons.css">
+<style type="text/css">a.ntnu-button {
+    font: 600 14px "Source Sans Pro", Georgia, serif;
+    background: #fff;
+    color: #00509e;
+    border: 1px solid #00509e;
+    border-color: #00509e !important;
+    border-style: solid !important;
+    border-radius: 10rem;
+    display: inline-block;
+    padding: 5px 15px;
+    height: auto;
+    font-weight: bold;
+    line-height: 1.5em;
+    text-align: center;
+    vertical-align: top;
+    cursor: pointer;
+    text-decoration: none
+}
+
+a.ntnu-button:hover {
+    background: #00509e;
+    color: #fff;
+    text-decoration: none
+}
+.person-card img {
+  width: 56px;
+  border: 1px solid #eee;
+}
+
+.person-card-name {
+  font-weight: 600;
+}
+
+.person-card-email {
+  font-size: 0.8em;
+}
+
+.person-card-detail {
+  font-size: 0.8em;
+}
+.person-card img {
+  width: 56px;
+  border: 1px solid #eee;
+}
+
+.person-card-name {
+  font-weight: 600;
+}
+
+.person-card-email {
+  font-size: 0.8em;
+}
+
+.person-card-detail {
+  font-size: 0.8em;
+}
+div.check ul,
+div.check ul li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+div.check ul {
+  margin: 2em 0;
+}
+
+div.check ul li {
+  margin: 1em;
+  margin-left: 3em;
+}
+
+div.check ul li:before {
+  content: '\f26a';
+  font-family: bootstrap-icons !important;
+  font-size:20;
+  float: left;
+  margin-left: -1.5em;
+  color: #1481b8;
+}
+.double {
+  column-count: 2;
+}
+div.goals ul,
+div.goals ul li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+div.goals ul {
+  margin: 2em 0;
+}
+
+div.goals ul li {
+  margin: 1em;
+  margin-left: 3em;
+}
+
+div.goals ul li:before {
+  content: '\f26a';
+  font-family: bootstrap-icons !important;
+  font-size: 20;
+  float: left;
+  margin-left: -1.5em;
+  color: #00509e;
+}
+.w3collapsible {
+  background-color: #f0e9db;
+  color: #868279;
+  padding: 8px 18px 8px 8px;
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  border-radius: 3px 3px 0 0;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.w3active,
+.w3collapsible:hover {
+  background-color: #f0e9cb;
+}
+
+.w3content {
+  filter: blur(3px);
+  padding: 18px;
+  display: block;
+  overflow: hidden;
+  background-color: #f3f3f3;
+  margin-bottom: 15px;
+}
+.w3collapsible {
+  background-color: #f0e9db;
+  color: #868279;
+  padding: 8px 18px 8px 8px;
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  border-radius: 3px 3px 0 0;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.w3active,
+.w3collapsible:hover {
+  background-color: #f0e9cb;
+}
+
+.w3content {
+  filter: blur(3px);
+  padding: 18px;
+  display: block;
+  overflow: hidden;
+  background-color: #f3f3f3;
+  margin-bottom: 15px;
+}
+
+.rubric p {
+	margin: 0px
+}
+
+.rubric th {
+	text-align: center;
+	padding: 6px;
+}
+
+.rubric td {
+	vertical-align: top;
+	font-size: 12px;
+	padding: 6px;
+}
+
+.rubric th {
+	font-size: 12px;
+	vertical-align: top;
+}
+
+.rubric td:nth-child(2),
+.rubric th:nth-child(2) {
+	background-color: #D0E8DC;
+	width: 22%
+}
+
+.rubric td:nth-child(3),
+.rubric th:nth-child(3) {
+	background-color: #FCFDE3;
+	width: 22%
+}
+
+.rubric td:nth-child(4),
+.rubric th:nth-child(4) {
+	background-color: #F8D9C2;
+	width: 22%
+}
+
+.rubric td:nth-child(5),
+.rubric th:nth-child(5) {
+	background-color: #EBBCB9;
+	width: 22%
+}
+
+.rubric tfoot td {
+	text-align: right;
+	border-bottom: none;
+	padding: 1px;
+}
+
+.rubric tfoot a {
+	font-size: 12px;
+	font-style: italic;
+	color: gray
+}
+
+div.tip p {
+  padding: 10px;
+  background-color: #d9eaf2;
+  border-radius: 5px;
+  border-left: 6px solid #1481b8
+}
+.tree ul, .tree ul ul {
+  list-style: none;
+ } 
+.tree ul ul {
+ }
+ .tree ul li {
+  margin: 0;
+  padding: 0 7px;
+  line-height: 20px; 
+  border-left: 1px solid #868279;
+ }
+ .tree ul li:last-child {
+     border-left:none;
+ }
+ .tree ul li:before {
+    position:relative;
+    top:-0.3em;
+    height:22px;
+    width:12px;
+    color:white;
+    border-bottom:1px solid #868279;
+    content:"";
+    display:inline-block;
+    left:-7px;
+ }
+ .tree ul li:last-child:before {
+    border-left:1px solid #868279;
+    border-radius: 0px 0px 0px 3px   
+ }
+
+div.warning p {
+padding: 10px;
+background-color: #ffd9ab;
+border-radius: 5px;
+border-left: 6px solid #fc8c03 
+}
+
+div.warning p::before {
+    content: '\f071 ';
+    font-family: 'Font Awesome 5 Free'; 
+    color: #fc8c03;
+display: inline;
+}
+</style>
+<script src="assets/anchor.js"></script>
+<script src="assets/script-aside.js"></script>
+</head>
+<body id="top">
+
+<nav class="navbar navbar-expand-md navbar-dark " style="background-color:#666666"#2B65EC"> <!-- fixed-top -->
+        <ul class="nav nav-pills">
+        <li class="nav-item">
+    <a class="nav-link" href="index.html" style="font-weight: bold")>TTM4175</a>
+  </li>
+
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Teknostart</a>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="day0-2021.html">Oppstart</a>
+      <a class="dropdown-item" href="material/TTM4175-2021-L01-Introduction_to_ethical_hacking.pdf">Introduction to Ethical Hacking (PDF)</a>
+      <a class="dropdown-item" href="material/TTM4175-2021-L01-Introduction_to_Kali_linux.pdf">Introduction to Kali Linux (PDF)</a>
+      <a class="dropdown-item" href="day2-2021.html">Dag 2</a>
+      <a class="dropdown-item" href="day3-2021.html">Dag 3</a>
+      <div class="dropdown-divider"></div>
+      <a class="dropdown-item" href="day0-2020.html">(2020) Dag 0: Getting Started</a>
+      <a class="dropdown-item" href="day1-2020.html">(2020) Dag 1: Virtual Box</a>
+      <a class="dropdown-item" href="day2-2020.html">(2020) Dag 2: Linux Command Line</a>
+      <a class="dropdown-item" href="day3-2020.html">(2020) Dag 3: SSH and HTML</a>
+      <div class="dropdown-divider"></div>
+      <a class="dropdown-item" href="tips.html">Tips</a>
+    </div>
+  </li>
+        
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Preparation</a>
+    <div class="dropdown-menu">
+      <a class="dropdown-item disabled"><strong>Security and Ethical Hacking</strong></a>
+      <a class="dropdown-item" href="prep-security-1-2021.html">Security 1</a>
+      <a class="dropdown-item" href="prep-security-2-2021.html">Security 2</a>
+      <a class="dropdown-item" href="prep-security-3-2021.html">Security 3</a>
+      <a class="dropdown-item" href="prep-security-4-2021.html">Security 4</a>
+      <a class="dropdown-item" href="prep-security-5-2021.html">Security 5</a>
+      <div class="dropdown-divider"></div>
+      <a class="dropdown-item" href="prep-teamwork.html">Teamwork</a>
+      <div class="dropdown-divider"></div>
+      <a class="dropdown-item disabled"><strong>Internet of Things</strong></a>
+      <a class="dropdown-item" href="prep-iot-intro.html">IoT 1: Introduction</a>
+      <a class="dropdown-item" href="prep-iot-stm.html">IoT 2: State Machines</a>
+      <a class="dropdown-item" href="prep-iot-stmpy.html">IoT 2: State Machines in Micro Python</a>
+      <a class="dropdown-item" href="prep-iot-http-json.html">IoT 3: HTTP and JSON</a>
+      <a class="dropdown-item" href="prep-iot-mqtt.html">IoT 4: MQTT</a>
+      <!--
+      <a class="dropdown-item disabled"><strong>Networking (2020)</strong></a>
+      <a class="dropdown-item" href="prep-networking-1-2020.html">Binary and IP addresses</a>
+      <a class="dropdown-item" href="prep-networking-2-2020.html">Layers and Docker</a>
+      <a class="dropdown-item" href="prep-networking-3-2020.html">Webservers and DNS</a>
+      <div class="dropdown-divider"></div>
+      <a class="dropdown-item disabled"><strong>Security (2020)</strong></a>
+      <a class="dropdown-item" href="prep-security-1-2020.html">Security 1: Cyber Security and Ethical Hacking </a>
+      <a class="dropdown-item" href="prep-security-2-2020.html">Security 2: Authentication, Authorization, and Password Storage</a>
+      <a class="dropdown-item" href="prep-security-3-2020.html">Security 3: Passwords and Cryptography</a>
+      <a class="dropdown-item" href="prep-security-4-2020.html">Security 4: Security Vulnerabilities</a>
+      <div class="dropdown-divider"></div>
+      <a class="dropdown-item disabled"><strong>Internet of Things (2020)</strong></a>
+      <a class="dropdown-item" href="prep-iot-intro.html">IoT 1: Introduction</a>
+      <a class="dropdown-item" href="prep-iot-devices.html">IoT 1: Installation</a>
+      <a class="dropdown-item" href="prep-iot-stm.html">IoT 2: State Machines</a>
+      <a class="dropdown-item" href="prep-iot-stmpy.html">IoT 2: State Machines in Micro Python</a>
+      <a class="dropdown-item" href="prep-iot-http-json.html">IoT 3: HTTP and JSON</a>
+      <a class="dropdown-item" href="prep-iot-mqtt.html">IoT 4: MQTT</a>
+      <a class="dropdown-item" href="prep-iot-api.html">IoT 4: APIs</a>
+      <a class="dropdown-item" href="prep-iot-nb-iot.html">NB-IoT (Extra)</a>-->
+    </div>
+  </li>
+  
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Labs</a>
+    <div class="dropdown-menu">
+        <a class="dropdown-item disabled"><strong>Security</strong></a>
+        <a class="dropdown-item" href="security-1-2021.html">Security 1</a>
+        <a class="dropdown-item" href="material/TTM4175-2021-L02-Technical_information_gathering.pdf">Security 2: Technical Information gathering</a>
+        <a class="dropdown-item" href="material/TTM4175-2021-L03-Network_mapping.pdf">Security 3: Network mapping</a>
+        <a class="dropdown-item" href="material/TTM4175-2021-L04-Web_hacking1.pdf">Security 4: Web Hacking 1</a>
+        <a class="dropdown-item" href="material/TTM4175-2021-L04-Web_hacking2.pdf">Security 4: Web Hacking 2</a>
+        <a class="dropdown-item" href="security-5-2021.html">Security 5</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="teamwork.html">Teamwork</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item disabled"><strong>Internet of Things (2020)</strong></a>
+        <a class="dropdown-item" href="iot-devices-2021.html">IoT 1: Programming Devices</a>
+        <a class="dropdown-item" href="iot-stm-2021.html">IoT 2: State Machines</a>
+        <a class="dropdown-item" href="iot-http-json.html">IoT 3: HTTP and JSON</a>
+        <a class="dropdown-item" href="iot-mqtt-chat.html">IoT 4: MQTT Chat</a>
+        <!--
+        <a class="dropdown-item disabled"><strong>Networking (2020)</strong></a>
+        <a class="dropdown-item" href="networking-1-2020.html">Binary and IP addresses</a>
+        <a class="dropdown-item" href="networking-2-2020.html">Layers and Docker</a>
+        <a class="dropdown-item" href="networking-3-2020.html">Webservers and DNS</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item disabled"><strong>Security (2020)</strong></a>
+        <a class="dropdown-item" href="security-1-2020.html">Security 1</a>
+        <a class="dropdown-item" href="security-2-2020.html">Security 2</a>
+        <a class="dropdown-item" href="security-3-2020.html">Security 3</a>
+        <a class="dropdown-item" href="security-4-2020.html">Security 4</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item disabled"><strong>Internet of Things (2020)</strong></a>
+        <a class="dropdown-item" href="iot-devices.html">IoT 1: Programming Devices</a>
+        <a class="dropdown-item" href="iot-stm.html">IoT 2: State Machines</a>
+        <a class="dropdown-item" href="iot-http-json-2020.html">IoT 3: HTTP and JSON</a>
+        <a class="dropdown-item" href="iot-http-json-2020-solution.html">IoT 3: HTTP and JSON (Solution and Revised Tasks)</a>
+        <a class="dropdown-item" href="iot-mqtt-chat.html">IoT 4: MQTT Chat</a>
+        <a class="dropdown-item" href="iot-lopy.html">LoPy</a>
+        <a class="dropdown-item" href="iot-mqtt.html">MQTT</a>
+        <a class="dropdown-item" href="iot-lorawan.html">LoRaWAN / NB-IoT</a>
+        <a class="dropdown-item" href="iot-api.html">API</a>-->
+      </div>
+  </li>
+  
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Extra</a>
+    <div class="dropdown-menu">
+      <a class="dropdown-item disabled"><strong>Learning</strong></a>
+      <a class="dropdown-item" href="learning-rats.html">RATs</a>
+      <a class="dropdown-item" href="feedback.html">Tilbakemelding</a>
+      <a class="dropdown-item" href="reports.html">Rapporter</a>
+      <a class="dropdown-item" href="teams.html">Teams</a>
+      <a class="dropdown-item" href="working-in-teams.html">Working in Teams</a>
+      <a class="dropdown-item" href="tools.html">Learning Tools</a>
+      <div class="dropdown-divider"></div>
+      <a class="dropdown-item disabled"><strong>Material</strong></a>
+      <a class="dropdown-item" href="commands-help.html">Help on Commands</a>
+      <a class="dropdown-item" href="commands.html">List of Commands</a>
+      <a class="dropdown-item" href="computer-history.html">Extra Videos</a>
+      <div class="dropdown-divider"></div>
+      <a class="dropdown-item disabled"><strong>Tools</strong></a>
+      <a class="dropdown-item" href="virtual-box-mac.html">Virtual Box for Mac</a>
+      <a class="dropdown-item" href="virtual-box-win.html">Virtual Box for Windows</a>
+      <a class="dropdown-item" href="shell-mac.html">Terminal and SSH on Mac</a>
+      <a class="dropdown-item" href="shell-win.html">Terminal and SSH on Windows</a>
+    </div>
+  </li>
+  
+  <!--
+  <li class="nav-item">
+    <a class="nav-link" href="#">Blackboard</a>
+  </li>-->
+</ul>
+
+<div class="navbar-nav flex-row ml-md-auto d-none d-md-flex"></div>
+             <a class="navbar-brand" href="https://ntnu.edu">
+      	<svg width="100" height="30">
+      		<image xlink:href="https://innsida.ntnu.no/innsida-theme/images/ntnu-graphics/ntnu_logo_white.svg" 
+      		src="https://innsida.ntnu.no/innsida-theme/images/ntnu-graphics/ntnu_logo_white.png" width="100%" height="100%"></image>
+      	</svg>
+      </a>
+    </nav>
+
+
+<div class="page">
+    </section>
+    <section class="content">
+<h1>Writing Documents</h1>
+
+    </section>
+    <section class="content">
+<h1>Chunks</h1>
+
+    </section>
+    <section class="content">
+<h1>Markdown Chunks</h1>
+<p>The Markdown chunks of the document should follow <a href="https://pandoc.org/MANUAL.html#pandocs-markdown">Pandoc's Markdown syntax</a>.</p>
+<h2>Sections</h2>
+<p>Sections on different levels are written with preceeding <code>#</code>, <code>##</code>, <code>###</code></p>
+
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu"># Section Level 1</span></span></code></pre></div>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">## Section Level 2</span></span></code></pre></div>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">### Section Level 3</span></span></code></pre></div>
+<h2>Text Markup</h2>
+<p><strong>bold</strong> text <strong>bold</strong> text.
+<em>emphasized</em> text, <em>emphasized text</em></p>
+
+<h2>Lists</h2>
+
+    </section>
+    <section class="content">
+<h1>YAML Elements</h1>
+<p>YAML elements start and stop with a delimiter <code>---</code>.</p>
+
+<h2>Referenced Chunks</h2>
+<p>Use a chunk as a reference to other chunks defined in other files.</p>
+
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode yaml"><code class="sourceCode yaml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ref</span><span class="kw">:</span><span class="at"> file.md</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span></code></pre></div>
+<h2>Videos</h2>
+
+<div class="figure">
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/wupToqz1e2g?start=80" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<span name="wupToqz1e2g">&nbsp;</span>
+<aside name="wupToqz1e2g"><p><p>The Pale Blue Dot.</p>
+</p></aside>
+</div>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode yaml"><code class="sourceCode yaml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">type</span><span class="kw">:</span><span class="at"> youtube</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">video</span><span class="kw">:</span><span class="at"> wupToqz1e2g</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">position</span><span class="kw">:</span><span class="at"> aside</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">caption</span><span class="kw">:</span><span class="at"> </span><span class="st">&quot;The Pale Blue Dot.&quot;</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu">start</span><span class="kw">:</span><span class="at"> </span><span class="dv">80</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span></code></pre></div>
+<h2>Tables</h2>
+<p>Tables can be included directly as HTML, or via the following YAML section that refers to a table stored in a file.
+The table in the file must use the <a href="https://www.mediawiki.org/wiki/Help:Tables">mediawiki syntax for tables</a>, with an example shown below.
+The optional class attribute places a <code>&lt;div&gt;</code> element around the table for styling with the given class.</p>
+<p>The optional format attribute allows to select the markup within the cells. Examples are html, markdown, wikimedia, latex.</p>
+
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode yaml"><code class="sourceCode yaml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">type</span><span class="kw">:</span><span class="at"> table</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">file</span><span class="kw">:</span><span class="at"> tables/table.mw</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span><span class="kw">:</span><span class="at"> rubric</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">caption</span><span class="kw">:</span><span class="at"> </span><span class="st">&quot;Table with a caption.&quot;</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span></code></pre></div>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode mediawiki"><code class="sourceCode mediawiki"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="dv">{|</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="dv">|</span>Orange</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="dv">|</span>Apple</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="dv">|-</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="dv">|</span>Bread</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="dv">|</span>Pie</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="dv">|-</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="dv">|</span>Butter</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="dv">|</span>Ice cream </span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="dv">|}</span></span></code></pre></div>
+<h2>Figures</h2>
+<h2>Buttons</h2>
+<h2>Hints</h2>
+<p>Hints are boxes with information that is only visible when the reader clicks on the header.
+The top of the hint is specified with a YAML section.
+The content of the hint is provided as post-YAML section, directly following the YAML header.
+It ends after two consecutive empty lines.</p>
+
+<button class="w3collapsible">Hint about Something</button>
+<div class="w3content">
+<p>Within the content you can have lists:</p>
+<ul>
+<li>10.0.0.0/8</li>
+<li>172.16.0.0/12</li>
+<li>192.168.0.0/16</li>
+</ul>
+<p>And you can continue.</p>
+<p><strong>Remember:</strong> Hints should be helpful.</p>
+
+</div>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode yaml"><code class="sourceCode yaml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">type</span><span class="kw">:</span><span class="at"> hint</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> Hint about Something</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">Within the content you can have lists</span><span class="kw">:</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="at">* 10.0.0.0/8</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="at">* 172.16.0.0/12</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="at">* 192.168.0.0/16</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="at">An you can coninue.</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="ot">**Remember:**</span><span class="at"> Hints should be helpful. </span></span></code></pre></div>
+    </section>
+    <section class="content">
+<h1>HTML Blocks</h1>
+
+    </section>
+    <section class="content">
+<h1>Code Blocks</h1>
+<p>Supermark  uses Pandoc's functions to highlight code. Place the code between the following delimiters:</p>
+
+<div>
+<pre>
+```bash
+pandoc --list-highlight-languages
+```
+</pre>
+</div>
+
+
+
+<p><code>abc</code>, <code>asn1</code>, <code>asp</code>, <code>ats</code>, <code>awk</code>, <code>actionscript</code>, <code>ada</code>, <code>agda</code>, <code>alertindent</code>, <code>apache</code>, <code>bash</code>, <code>bibtex</code>, <code>boo</code>, <code>c</code>, <code>cs</code>, <code>cpp</code>, <code>cmake</code>, <code>css</code>, <code>changelog</code>, <code>clojure</code>, <code>coffee</code>, <code>coldfusion</code>, <code>commonlisp</code>, <code>curry</code>, <code>d</code>, <code>dtd</code>, <code>diff</code>, <code>djangotemplate</code>, <code>dockerfile</code>, <code>doxygen</code>, <code>doxygenlua</code>, <code>eiffel</code>, <code>elixir</code>, <code>email</code>, <code>erlang</code>, <code>fsharp</code>, <code>fortran</code>, <code>gcc</code>, <code>glsl</code>, <code>gnuassembler</code>, <code>m4</code>, <code>go</code>, <code>html</code>, <code>hamlet</code>, <code>haskell</code>, <code>haxe</code>, <code>ini</code>, <code>isocpp</code>, <code>idris</code>, <code>fasm</code>, <code>nasm</code>, <code>json</code>, <code>jsp</code>, <code>java</code>, <code>javascript</code>, <code>javadoc</code>, <code>julia</code>, <code>kotlin</code>, <code>llvm</code>, <code>latex</code>, <code>lex</code>, <code>lilypond</code>, <code>literatecurry</code>, <code>literatehaskell</code>, <code>lua</code>, <code>mips</code>, <code>makefile</code>, <code>markdown</code>, <code>mathematica</code>, <code>matlab</code>, <code>maxima</code>, <code>mediawiki</code>, <code>metafont</code>, <code>modelines</code>, <code>modula2</code>, <code>modula3</code>, <code>monobasic</code>, <code>ocaml</code>, <code>objectivec</code>, <code>objectivecpp</code>, <code>octave</code>, <code>opencl</code>, <code>php</code>, <code>povray</code>, <code>pascal</code>, <code>perl</code>, <code>pike</code>, <code>postscript</code>, <code>powershell</code>, <code>prolog</code>, <code>pure</code>, <code>purebasic</code>, <code>python</code>, <code>r</code>, <code>relaxng</code>, <code>relaxngcompact</code>, <code>roff</code>, <code>ruby</code>, <code>rhtml</code>, <code>rust</code>, <code>sgml</code>, <code>sql</code>, <code>sqlmysql</code>, <code>sqlpostgresql</code>, <code>scala</code>, <code>scheme</code>, <code>tcl</code>, <code>tcsh</code>, <code>texinfo</code>, <code>mandoc</code>, <code>vhdl</code>, <code>verilog</code>, <code>xml</code>, <code>xul</code>, <code>yaml</code>, <code>yacc</code>, <code>zsh</code>, <code>dot</code>, <code>noweb</code>, <code>rest</code>, <code>sci</code>, <code>sed</code>, <code>xorg</code>, <code>xslt</code>,</p>
+<p>For an updated list, type:</p>
+
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">pandoc</span> <span class="at">--list-highlight-languages</span></span></code></pre></div>
+    </section>
+    <section class="content">
+<h1>File Encoding</h1>
+<ul>
+<li>UTF-8</li>
+</ul>
+
+    </section>
+    <section class="content">
+<h1>Special</h1>
+<h3>Learning Goals</h3>
+
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>:goals:</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Learning Goal 1</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Learning Goal 2</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span></code></pre></div>
+<p>End the goal environment with two empty lines.</p>
+
+<div class="goals"><ul>
+<li>Learning Goal 1</li>
+<li>Learning Goal 2</li>
+</ul>
+</div>
+<h2>Tips</h2>
+
+<div class="tip"><p>A tip is shown in a highlighted box.</p>
+</div>
+<pre><code>:tip: A tip is shown in a highlighted box.</code></pre>
+<h2>Warnings</h2>
+
+<div class="warning"><p>Use warnings to prevent harm or damage. Draw attention.</p>
+</div>
+<pre><code>:warning: Use warnings to prevent harm or damage. Draw attention.</code></pre>
+    </section>
+    <section class="content">
+<h1>Image Placeholders</h1>
+
+    </section>
+    <section class="content">
+<h1>Constants</h1>
+
+<p>You can use constants in your documents that get replaced with values.</p>
+
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="an">Year:</span><span class="co"> {{:year:}}</span></span></code></pre></div>
+    </section>
+</div>
+
+
+<footer></footer>
+<script>
+    anchors.add('h1').add('h2').add('h3');
+    anchors.options.visible = 'always';
+</script>
+</body>
+</html>
