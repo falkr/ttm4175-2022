@@ -40,30 +40,6 @@ a.ntnu-button:hover {
     color: #fff;
     text-decoration: none
 }
-div.check ul,
-div.check ul li {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-div.check ul {
-  margin: 2em 0;
-}
-
-div.check ul li {
-  margin: 1em;
-  margin-left: 3em;
-}
-
-div.check ul li:before {
-  content: '\f26a';
-  font-family: bootstrap-icons !important;
-  font-size:20;
-  float: left;
-  margin-left: -1.5em;
-  color: #1481b8;
-}
 div.figure {
   padding: 20px 0 20px 0;
   width: 100%;
@@ -75,119 +51,18 @@ div.figurefullwitdth {
   margin-right: -33px;
   width: 100%;
 }
-div.goals ul,
-div.goals ul li {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-div.goals ul {
-  margin: 2em 0;
-}
-
-div.goals ul li {
-  margin: 1em;
-  margin-left: 3em;
-}
-
-div.goals ul li:before {
-  content: '\f26a';
-  font-family: bootstrap-icons !important;
-  font-size:20;
-  float: left;
-  margin-left: -1.5em;
-  color: #1481b8;
-}
-div.report p {
+div.warning p {
 padding: 10px;
-background-color: #D6E5F0;
+background-color: #ffd9ab;
 border-radius: 5px;
-border-left: 6px solid #1481b8 
+border-left: 6px solid #fc8c03 
 }
 
-div.report p::before {
-    content: 'For the Report: ';
-    font-weight: bold; 
-    color: #1481b8;
+div.warning p::before {
+    content: '\f071 ';
+    font-family: 'Font Awesome 5 Free'; 
+    color: #fc8c03;
 display: inline;
-}
-.steps ol, .steps ul {
-  counter-reset: li;
-  list-style: none;
-  margin-left: 10px
-}
-
-.steps li {
-  margin: 0 0 10px 0;
-  min-height: 40px
-}
-
-.steps li:before {
-  content: counter(li);
-  counter-increment: li;
-  border: 2px solid #868279;
-  color: #868279;
-  background-color: none;
-  font-family: "Source Sans Pro", Georgia, serif;
-  font-weight: bold;
-  border-radius: 100%;
-  text-align: center;
-  display: inline-block;
-  top:8px;
-  left:-30px;
-  width: 30px;
-  height: 30px;
-  position: relative;
-  margin: -20px -10px -20px -20px
-}
-
-div.task p {
-padding: 10px;
-background-color: #D6E5F0;
-border-radius: 5px;
-border-left: 6px solid #1481b8 
-}
-
-div.task p::before { 
-content: "Task: ";
-font-weight: bold;
-display: inline;
-}
-div.tip p {
-  padding: 10px;
-  background-color: #d9eaf2;
-  border-radius: 5px;
-  border-left: 6px solid #1481b8
-}
-
-table.weekplan {
-  width: 100%;
-  table-layout: fixed;
-}
-
-table.weekplan td {
-  background-color: #1481b8;
-  color: white;
-}
-
-table.weekplan td, table.weekplan th {
-  text-align: center;
-}
-
-table.weekplan td:empty {
-  background-color: white;
-}
-
-table.weekplan td:first-child {
-  background-color: white;
-  color: grey;
-}
-
-table.weekplan a {
-  font-weight:bold;
-  color: white;
-  text-decoration: underline;
 }
 </style>
 <script src="assets/anchor.js"></script>
@@ -389,12 +264,10 @@ Hvis det er for lett, lærer du ingenting og det er slett ikke gøy. Hvis
 det er for vanskelig, skjønner du ingenting og lærer heller ikke noe.
 Målet er at det skal være akkurat passe.</p>
 
-<div class="figure">
-<img src="figures/vanskelighetsgrad.jpg" alt="Læringsutbytte blir best når vanskelighetsgraden stemmer." width="100%"/>
-<span name="figures/vanskelighetsgrad.jpg">&nbsp;</span>
-<aside name="figures/vanskelighetsgrad.jpg"><p><p>Læringsutbytte blir best når vanskelighetsgraden stemmer.</p>
-</p></aside>
-</div>
+<figure class="figure">
+    <img src="figures/vanskelighetsgrad.jpg" class="figure-img img-fluid rounded" alt="Læringsutbytte blir best når vanskelighetsgraden stemmer.">
+  <figcaption class="figure-caption">Læringsutbytte blir best når vanskelighetsgraden stemmer.</figcaption>
+</figure>
 <p>Den oransje kurven viser at læringsutbytte er høyest når oppgaven er
 akkurat passe i vanskelighetsgraden. Men siden dere er ganske
 forskjellige og har forskjellig forkunnskap, vil noen oppfatte samme
